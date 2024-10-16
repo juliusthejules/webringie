@@ -5,21 +5,17 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    /* Reset zoom properties */
-    zoom: 1; /* Ensure initial zoom is 100% */
-    transform: scale(1); /* Reset scaling */
 }
 
 .container {
-    max-width: 1200px; /* Adjust max-width for better responsiveness */
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0 auto; /* Center the content area horizontally */
+    padding: 0 20px; /* Add horizontal padding */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items vertically */
 }
 
-header, footer, main, section {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
+header, footer, main {
+    flex: 1; /* Give each element equal height */
     border-radius: 8px;
 }
 
@@ -85,4 +81,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    }
+        }
