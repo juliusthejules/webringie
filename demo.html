@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webringie Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Webringie Demo</h1>
+        <p>See how easy it is to integrate your site with Webringie!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Adding Your Site</h2>
+            <p>To add your site, create a <code>metadata.json</code> file and place it at the root of your site. Here’s a sample:</p>
+            <pre><code>{
+    "website": "https://yourwebsite.com",
+    "title": "Your Website Title",
+    "description": "A brief description of your website.",
+    "keywords": ["keyword1", "keyword2", "keyword3"],
+    "backlink": "https://yourwebsite.com/backlink"
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>Step 1: Set Up Your Metadata</h2>
+            <p>Make sure your <code>metadata.json</code> file is correctly configured and accessible.</p>
+            <button id="checkMetadata">Check Metadata</button>
+            <div id="metadataResponse"></div>
+        </section>
+
+        <section>
+            <h2>Step 2: Add the Script Tag</h2>
+            <p>Add the following line to your HTML:</p>
+            <pre><code>&lt;script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer&gt;&lt;/script&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Live Demo</h2>
+            <p>Once you’ve added your site, you can see your metadata being shared below:</p>
+            <div id="sharedMetadata"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Webringie. Copyright &copy; 2024 Joseph D. Smith| <a href="https://github.com/juliusthejules/webringie">GitHub Repository</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('checkMetadata').addEventListener('click', async function() {
+            const response = await fetch('https://yourwebsite.com/metadata.json');
+            const metadata = await response.json();
+            document.getElementById('metadataResponse').innerText = JSON.stringify(metadata, null, 2);
+            document.getElementById('sharedMetadata').innerHTML = `
+                <h3>Shared Metadata</h3>
+                <p><strong>Website:</strong> ${metadata.website}</p>
+                <p><strong>Title:</strong> ${metadata.title}</p>
+                <p><strong>Description:</strong> ${metadata.description}</p>
+                <p><strong>Keywords:</strong> ${metadata.keywords.join(', ')}</p>
+                <p><strong>Backlink:</strong> <a href="${metadata.backlink}">${metadata.backlink}</a></p>
+            `;
+        });
+    </script>
+</body>
+  </html>
