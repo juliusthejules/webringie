@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    /* Reset zoom properties */
+    zoom: 1; /* Ensure initial zoom is 100% */
+    transform: scale(1); /* Reset scaling */
 }
 
 .container {
