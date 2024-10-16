@@ -1,16 +1,5 @@
-[
-    {
-        "website": "https://example.com",
-        "title": "Example Title",
-        "description": "An example description for SEO purposes.",
-        "keywords": ["example", "SEO", "Webringie"],
-        "backlink": "https://example.com/backlink-page"
-    },
-    {
-        "website": "https://anotherexample.com",
-        "title": "Another Example",
-        "description": "This is another example description for SEO.",
-        "keywords": ["SEO", "web development", "backlinks"],
-        "backlink": "https://anotherexample.com/backlink"
-    }
-]
+{
+    "keywords": ["SEO", "Search Engine Optimization", "SERPs"],
+    "viewport": "width=device-width, initial-scale=1.0",
+    "robots": "index, follow"
+}
