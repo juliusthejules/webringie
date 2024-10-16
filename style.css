@@ -1,10 +1,9 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 .container {
@@ -14,19 +13,16 @@ body {
     flex-direction: column; /* Arrange items vertically */
 }
 
-p {
-    word-wrap: break-word;
-}
-
 header, footer, main {
     flex: 1; /* Give each element equal height */
     border-radius: 8px;
 }
 
 header {
-    background: #007bff;
+    background: #007bff; /* From the original style */
     color: #ffffff;
     text-align: center;
+    padding: 20px; /* From the Pyodizer style */
 }
 
 h1 {
@@ -45,15 +41,17 @@ main {
 
 section {
     margin-bottom: 20px;
+    padding: 20px; /* From the Pyodizer style */
 }
 
 /* Code box styles */
-pre {
-    background: #f8f9fa;
+.code-block {
+    background-color: #ecf0f1;
     padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
+    border-left: 4px solid #3498db;
+    font-family: monospace;
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /* Button styles */
@@ -76,6 +74,8 @@ footer {
     text-align: center;
     background: #007bff;
     color: white;
+    padding: 10px; /* From the Pyodizer style */
+    margin-top: 20px; /* From the Pyodizer style */
 }
 
 footer a {
