@@ -26,13 +26,9 @@ To use Webringie, follow these simple steps:
    <script src="./js/webringie.js" defer></script>
    ```
 
-3. **Visit the Demo**: Check out the demo page to see Webringie in action!
-
 ## Usage
 
 Simply include the provided script tag in your HTML, and Webringie will take care of the rest. There’s no need to submit any information—just add the script, and you're set!
-
-
 
 ## License
 
