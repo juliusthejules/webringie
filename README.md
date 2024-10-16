@@ -1,27 +1,47 @@
 # Webringie
 
-## Overview
-**Webringie** is a decentralized SEO tool designed to help websites within the same niche or community share metadata and backlinks to improve their visibility in search engines. By connecting websites, Webringie enables enhanced cross-linking and metadata updates, boosting discoverability for all participants.
+Webringie is a simple and effective tool for enhancing your website's SEO. By adding just a single `<script>` tag to your HTML, Webringie automatically injects essential metadata, improving your site's visibility in search engines.
 
 ## Features
-- **Metadata Exchange**: Fetch SEO-related metadata such as keywords and descriptions from other websites in the ring.
-- **Backlinks**: Automatically generate backlinks to other sites in the ring.
-- **Asynchronous Updates**: Integrate and update metadata seamlessly with JavaScript.
 
-## How to Use
-1. Add the following code to your website to integrate Webringie:
+- **Dynamic SEO Metadata**: Automatically fetches and applies SEO metadata to your website.
+- **Easy Integration**: Just include a simple `<script>` tag, and you're good to go!
+- **SEO-friendly**: Helps improve your website's search engine ranking with minimal effort.
 
-```html
-<script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer></script>
-```
+## Getting Started
 
-2. Ensure the API is fetching data from the correct endpoint:
+To use Webringie, follow these simple steps:
 
-```javascript
-fetchMetadata("https://juliusthejules.github.io/webringie/api/metadata.json");
-```
+1. **Clone the Repository**: 
+   To clone the repository, run the following command in your terminal:
+   ```
+   git clone https://github.com/juliusthejules/webringie.git
+   ```
 
-3. The script will automatically update your meta tags and insert backlinks into your page.
+   Note: The main branch is locked, so you may want to create a new branch to make changes.
+
+2. **Include the Script Tag**:
+   Add the following `<script>` tag to the `<head>` section of your HTML document:
+   ```
+   <script src="./js/webringie.js" defer></script>
+   ```
+
+3. **Visit the Demo**: Check out the demo page to see Webringie in action!
+
+## Usage
+
+Simply include the provided script tag in your HTML, and Webringie will take care of the rest. There’s no need to submit any information—just add the script, and you're set!
+
+
 
 ## License
-This project is licensed under the [Apache 2.0 License](LICENSE).
+
+Webringie is licensed under the [Apache 2.0 License](LICENSE).
+
+## Contact
+
+If you have any questions or need assistance, feel free to reach out to me at [joseph.jds.smith@gmail.com](mailto:joseph.jds.smith@gmail.com?subject=Webringie).
+
+### Notice
+
+For this particular Webringie to be functional, your site should primarily be focused on SEO and in the field of Search Engine Optimization. The topic of this particular Webringie is Search Engine Optimization (SEO).
