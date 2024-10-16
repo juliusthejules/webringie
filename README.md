@@ -12,7 +12,7 @@ Webringie is a simple and effective tool for enhancing your website's SEO. By ad
 
 To use Webringie, follow these simple steps:
 
-1. **Clone the Repository**: 
+1. **Clone the Repository** (optional): 
    To clone the repository, run the following command in your terminal:
    ```
    git clone https://github.com/juliusthejules/webringie.git
@@ -23,7 +23,7 @@ To use Webringie, follow these simple steps:
 2. **Include the Script Tag**:
    Add the following `<script>` tag to the `<head>` section of your HTML document:
    ```
-   <script src="./js/webringie.js" defer></script>
+   <script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer></script>
    ```
 
 ## Usage
