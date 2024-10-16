@@ -1,38 +1,26 @@
-// Webringie API for fetching and applying metadata
-async function fetchMetadata(apiUrl) {
-  try {
-    let response = await fetch(apiUrl);
-    if (!response.ok) throw new Error("Error fetching data");
-    let data = await response.json();
-    console.log("Fetched Metadata:", data);
-    updateContent(data[0]); // You can extend this to iterate through all available metadata
-  } catch (error) {
-    console.error("Error:", error);
-    document.getElementById("webringie-content").innerText = "Error fetching metadata.";
-  }
-}
+fetch('./API/metadata.json')
+    .then(response => response.json())
+    .then(data => {
+        // Inject metadata into the head section
+        if (data.keywords) {
+            let metaKeywords = document.createElement('meta');
+            metaKeywords.name = 'keywords';
+            metaKeywords.content = data.keywords.join(', ');
+            document.head.appendChild(metaKeywords);
+        }
 
-function updateContent(metadata) {
-  if (metadata) {
-    // Dynamically update meta tags with fetched metadata
-    document.querySelector('meta[name="keywords"]').setAttribute('content', metadata.keywords.join(', '));
-    document.querySelector('meta[name="description"]').setAttribute('content', metadata.description);
+        if (data.viewport) {
+            let metaViewport = document.createElement('meta');
+            metaViewport.name = 'viewport';
+            metaViewport.content = data.viewport;
+            document.head.appendChild(metaViewport);
+        }
 
-    // Update the div content with fetched metadata
-    let contentDiv = document.getElementById("webringie-content");
-    contentDiv.innerHTML = `
-      <h2>${metadata.title}</h2>
-      <p>${metadata.description}</p>
-      <p><strong>Keywords:</strong> ${metadata.keywords.join(', ')}</p>
-      <a href="${metadata.backlink}" target="_blank">Visit ${metadata.website}</a>
-    `;
-
-    console.log("Metadata applied successfully!");
-  } else {
-    console.error("No metadata available to update");
-    document.getElementById("webringie-content").innerText = "No metadata available.";
-  }
-}
-
-// Example of calling the fetch function
-fetchMetadata("https://juliusthejules.github.io/webringie/API/metadata.json");
+        if (data.robots) {
+            let metaRobots = document.createElement('meta');
+            metaRobots.name = 'robots';
+            metaRobots.content = data.robots;
+            document.head.appendChild(metaRobots);
+        }
+    })
+    .catch(error => console.error('Error loading metadata:', error));
