@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    max-width: 1 auto
     margin: 0 auto; /* Center the content area horizontally */
     padding: 0 20px; /* Add horizontal padding */
     display: flex; /* Enable Flexbox */
