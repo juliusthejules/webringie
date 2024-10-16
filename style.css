@@ -40,8 +40,8 @@ main {
 }
 
 section {
-    margin-bottom: 8px;
-    padding: 8px; /* From the Pyodizer style */
+    margin-bottom: 5px; /* Up & Down */
+    padding: 8px; /* Out & In */
 }
 
 /* Code box styles */
