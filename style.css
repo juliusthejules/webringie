@@ -41,7 +41,7 @@ main {
 
 section {
     margin-bottom: 20px;
-    padding: 20px; /* From the Pyodizer style */
+    padding: 8px; /* From the Pyodizer style */
 }
 
 /* Code box styles */
