@@ -13,12 +13,17 @@ body {
     padding: 0 20px; /* Add horizontal padding */
 }
 
+header, footer, main, section {
+    width: 100%; /* Ensure full width for responsive layout */
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for consistency */
+}
+
 header {
     background: #007bff;
     color: #ffffff;
-    padding: 20px;
     text-align: center;
-    border-radius: 8px; /* Rounded corners for consistency */
 }
 
 h1 {
@@ -31,9 +36,7 @@ h2 {
 }
 
 main {
-    padding: 20px;
     background: #ffffff;
-    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,11 +71,8 @@ button:hover {
 /* Footer styles */
 footer {
     text-align: center;
-    padding: 10px; /* Reduced padding */
     background: #007bff;
     color: white;
-    border-radius: 8px; /* Rounded corners for consistency */
-    width: 100%; /* Ensure it spans the full width of the container */
 }
 
 footer a {
