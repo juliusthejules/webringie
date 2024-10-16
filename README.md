@@ -44,4 +44,4 @@ If you have any questions or need assistance, feel free to reach out to me at [j
 
 ### Notice
 
-For this particular Webringie to be functional, your site should primarily be focused on SEO and in the field of Search Engine Optimization. The topic of this particular Webringie is Search Engine Optimization (SEO).
+Your website must be focused on SEO and related to Search Engine Optimization for this particular Webringie to function properly.
