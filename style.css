@@ -86,3 +86,19 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Disclaimer Styles */
+.disclaimer {
+    background-color: #e9ecef; /* Slightly darker than the main background for contrast */
+    border-top: 1px solid #007bff; /* Match the footer's color for a cohesive look */
+    padding: 15px;
+    font-size: 0.9em;
+    color: #555; /* Gray text for a softer tone */
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners to match header/footer */
+}
+
+.disclaimer p {
+    margin: 0;
+    line-height: 1.5;
+}
