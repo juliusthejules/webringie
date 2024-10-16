@@ -8,11 +8,15 @@ body {
 }
 
 .container {
-    max-width: 800px;
     margin: 0 auto; /* Center the content area horizontally */
     padding: 0 20px; /* Add horizontal padding */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
+    width: 80%; /* Adjust the width as needed */
+}
+
+p {
+    word-wrap: break-word;
 }
 
 header, footer, main {
