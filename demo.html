@@ -2,67 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webringie Demo</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer></script>
+    <script src="./js/webringie.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Webringie Demo</h1>
-            <p>See how easy it is to integrate Webringie into your website!</p>
-        </div>
+        <h1>Webringie Demo</h1>
+        <p>Just add the script tag below to use Webringie for dynamic SEO metadata integration!</p>
+        <code>
+            &lt;script src="./js/webringie.js" defer&gt;&lt;/script&gt;
+        </code>
     </header>
-
-    <main>
-        <div class="container">
-            <section>
-                <h2>Demo Integration</h2>
-                <p>To see Webringie in action, follow these steps:</p>
-                <ol>
-                    <li>Include the following script tag in your HTML:</li>
-                    <pre><code>&lt;script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer&gt;&lt;/script&gt;</code></pre>
-                    <li>Create a <code>metadata.json</code> file with your site's metadata.</li>
-                    <li>Once set up, your site will automatically be linked to others in the Webringie network.</li>
-                </ol>
-                <h3>Example Metadata File</h3>
-                <pre><code>{
-    "siteName": "Your Site Name",
-    "siteURL": "https://yourwebsite.com",
-    "description": "A brief description of your site.",
-    "keywords": ["SEO", "Webringie", "metadata"]
-}</code></pre>
-                <p>Try it out and see how it boosts your visibility!</p>
-            </section>
-
-            <section>
-                <h2>Live Demo</h2>
-                <p>Below is a live example of how Webringie integrates:</p>
-                <button id="demoButton">Run Webringie Integration</button>
-                <div id="output" style="margin-top: 20px;"></div>
-            </section>
-        </div>
-    </main>
-
+    <section id="webring">
+        <h2>How to Use Webringie</h2>
+        <p>To add Webringie to your website:</p>
+        <ol>
+            <li>Copy the following script tag:</li>
+            <code>
+                &lt;script src="./js/webringie.js" defer&gt;&lt;/script&gt;
+            </code>
+            <li>Paste it into the <code>&lt;head&gt;</code> section of your HTML document.</li>
+            <li>Enjoy the automatic SEO enhancements!</li>
+        </ol>
+    </section>
     <footer>
-        <div class="container">
-            <p>Webringie. Copyright &copy; 2024 Joseph D. Smith | <a href="./index.html">Home</a> | <a href="./docs/documentation.md">Documentation</a> | <a href="https://github.com/juliusthejules/webringie">GitHub Repository</a></p>
-        </div>
+        <p>Webringie. Copyright &copy; 2024 Joseph D. Smith</p>
     </footer>
-
-    <script>
-        document.getElementById('demoButton').addEventListener('click', function() {
-            const output = document.getElementById('output');
-            output.innerHTML = '<p>Attempting to integrate with Webringie...</p>';
-            
-            // Simulating an API call
-            setTimeout(() => {
-                // Simulate a successful response
-                output.innerHTML += '<p>Success! Your site has been added to the Webringie network.</p>';
-                output.innerHTML += '<p><strong>Note:</strong> Ensure you have implemented the necessary API setup for real integration.</p>';
-            }, 2000); // Simulate a 2-second API call
-        });
-    </script>
 </body>
 </html>
