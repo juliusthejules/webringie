@@ -11,16 +11,16 @@ body {
 }
 
 .container {
-    max-width: 800px; /* Set a maximum width for all content */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add horizontal padding */
+    max-width: 1200px; /* Adjust max-width for better responsiveness */
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header, footer, main, section {
-    width: 100%; /* Ensure full width for responsive layout */
+    width: 100%;
     margin: 0;
     padding: 20px;
-    border-radius: 8px; /* Rounded corners for consistency */
+    border-radius: 8px;
 }
 
 header {
@@ -52,8 +52,8 @@ pre {
     background: #f8f9fa;
     padding: 10px;
     border-radius: 5px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: pre-wrap; /* Allow wrapping for long lines */
+    overflow-x: auto;
+    white-space: pre-wrap;
 }
 
 /* Button styles */
@@ -79,10 +79,10 @@ footer {
 }
 
 footer a {
-    color: #ffcc00; /* Changed link color to yellow for visibility */
-    text-decoration: underline; /* Make it clear that it's a link */
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Keep hover effect consistent */
-}
+    text-decoration: underline;
+    }
