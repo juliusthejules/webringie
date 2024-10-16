@@ -52,19 +52,17 @@
     </footer>
 
     <script>
-        document.getElementById('checkMetadata').addEventListener('click', async function() {
-            const response = await fetch('https://yourwebsite.com/metadata.json');
-            const metadata = await response.json();
-            document.getElementById('metadataResponse').innerText = JSON.stringify(metadata, null, 2);
-            document.getElementById('sharedMetadata').innerHTML = `
-                <h3>Shared Metadata</h3>
-                <p><strong>Website:</strong> ${metadata.website}</p>
-                <p><strong>Title:</strong> ${metadata.title}</p>
-                <p><strong>Description:</strong> ${metadata.description}</p>
-                <p><strong>Keywords:</strong> ${metadata.keywords.join(', ')}</p>
-                <p><strong>Backlink:</strong> <a href="${metadata.backlink}">${metadata.backlink}</a></p>
-            `;
+        document.getElementById('demoButton').addEventListener('click', function() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Attempting to integrate with Webringie...</p>';
+            
+            // Simulating an API call
+            setTimeout(() => {
+                // Simulate a successful response
+                output.innerHTML += '<p>Success! Your site has been added to the Webringie network.</p>';
+                output.innerHTML += '<p><strong>Note:</strong> Ensure you have implemented the necessary API setup for real integration.</p>';
+            }, 2000); // Simulate a 2-second API call
         });
     </script>
 </body>
-  </html>
+</html>
