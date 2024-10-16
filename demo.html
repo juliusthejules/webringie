@@ -9,45 +9,46 @@
 </head>
 <body>
     <header>
-        <h1>Webringie Demo</h1>
-        <p>See how easy it is to integrate your site with Webringie!</p>
+        <div class="container">
+            <h1>Webringie Demo</h1>
+            <p>See how easy it is to integrate Webringie into your website!</p>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Adding Your Site</h2>
-            <p>To add your site, create a <code>metadata.json</code> file and place it at the root of your site. Here’s a sample:</p>
-            <pre><code>{
-    "website": "https://yourwebsite.com",
-    "title": "Your Website Title",
-    "description": "A brief description of your website.",
-    "keywords": ["keyword1", "keyword2", "keyword3"],
-    "backlink": "https://yourwebsite.com/backlink"
+        <div class="container">
+            <section>
+                <h2>Demo Integration</h2>
+                <p>To see Webringie in action, follow these steps:</p>
+                <ol>
+                    <li>Include the following script tag in your HTML:</li>
+                    <pre><code>&lt;script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer&gt;&lt;/script&gt;</code></pre>
+                    <li>Create a <code>metadata.json</code> file with your site's metadata.</li>
+                    <li>Once set up, your site will automatically be linked to others in the Webringie network.</li>
+                </ol>
+                <h3>Example Metadata File</h3>
+                <pre><code>{
+    "siteName": "Your Site Name",
+    "siteURL": "https://yourwebsite.com",
+    "description": "A brief description of your site.",
+    "keywords": ["SEO", "Webringie", "metadata"]
 }</code></pre>
-        </section>
+                <p>Try it out and see how it boosts your visibility!</p>
+            </section>
 
-        <section>
-            <h2>Step 1: Set Up Your Metadata</h2>
-            <p>Make sure your <code>metadata.json</code> file is correctly configured and accessible.</p>
-            <button id="checkMetadata">Check Metadata</button>
-            <div id="metadataResponse"></div>
-        </section>
-
-        <section>
-            <h2>Step 2: Add the Script Tag</h2>
-            <p>Add the following line to your HTML:</p>
-            <pre><code>&lt;script src="https://juliusthejules.github.io/webringie/js/webringie.js" defer&gt;&lt;/script&gt;</code></pre>
-        </section>
-
-        <section>
-            <h2>Live Demo</h2>
-            <p>Once you’ve added your site, you can see your metadata being shared below:</p>
-            <div id="sharedMetadata"></div>
-        </section>
+            <section>
+                <h2>Live Demo</h2>
+                <p>Below is a live example of how Webringie integrates:</p>
+                <button id="demoButton">Run Webringie Integration</button>
+                <div id="output" style="margin-top: 20px;"></div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>Webringie. Copyright &copy; 2024 Joseph D. Smith| <a href="https://github.com/juliusthejules/webringie">GitHub Repository</a></p>
+        <div class="container">
+            <p>Webringie. Copyright &copy; 2024 Joseph D. Smith | <a href="./index.html">Home</a> | <a href="./documentation.md">Documentation</a> | <a href="https://github.com/juliusthejules/webringie">GitHub Repository</a></p>
+        </div>
     </footer>
 
     <script>
