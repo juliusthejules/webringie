@@ -35,4 +35,4 @@ function updateContent(metadata) {
 }
 
 // Example of calling the fetch function
-fetchMetadata("https://juliusthejules.github.io/webringie/api/metadata.json");
+fetchMetadata("https://juliusthejules.github.io/webringie/API/metadata.json");
