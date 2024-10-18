@@ -102,3 +102,23 @@ footer a:hover {
     margin: 0;
     line-height: 1.5;
 }
+
+#gravatar-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#gravatar-container img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+#gravatar-container h3 {
+    font-size: 24px;
+}
+
+#gravatar-container p {
+    font-size: 16px;
+    color: #666;
+    }
