@@ -40,5 +40,13 @@ fetch('./API/metadata.json')
             metaDistribution.content = data.distribution;
             document.head.appendChild(metaDistribution);
         }
+
+        // Inject charset encoding
+        if (data.charset) {
+    let metaCharset = document.createElement('meta');
+    metaCharset.setAttribute('charset', data.charset);
+    document.head.appendChild(metaCharset);
+        }
+        
     })
     .catch(error => console.error('Error loading metadata:', error));
