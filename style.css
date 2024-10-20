@@ -4,6 +4,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    width: 98%;
 }
 
 .container {
@@ -11,11 +12,13 @@ body {
     padding: 0 20px; /* Add horizontal padding */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
+    width: 98%;
 }
 
 header, footer, main {
     flex: 1; /* Give each element equal height */
     border-radius: 8px;
+    width: 98%;
 }
 
 header {
@@ -23,25 +26,30 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 20px; /* From the Pyodizer style */
+    width: 98%;
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
+    width: 98%;
 }
 
 h2 {
     color: #007bff;
+    width: 98%;
 }
 
 main {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
 }
 
 section {
     margin-bottom: 5px; /* Up & Down */
     padding: 8px; /* Out & In */
+    width: 98%;
 }
 
 /* Code box styles */
@@ -52,6 +60,7 @@ section {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
+    width: 98%;
 }
 
 /* Button styles */
@@ -76,6 +85,7 @@ footer {
     color: white;
     padding: 10px; /* From the Pyodizer style */
     margin-top: 20px; /* From the Pyodizer style */
+    width: 98%;
 }
 
 footer a {
@@ -96,11 +106,13 @@ footer a:hover {
     text-align: center;
     margin-top: 20px;
     border-radius: 8px; /* Rounded corners to match header/footer */
+    width: 98%;
 }
 
 .disclaimer p {
     margin: 0;
     line-height: 1.5;
+    width: 98%;
 }
 
 .modal {
@@ -109,8 +121,8 @@ footer a:hover {
             z-index: 1;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: 98%;
+            height: 98%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.5);
         }
@@ -121,7 +133,7 @@ footer a:hover {
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
-            max-width: 500px;
+            max-width: 500px
         }
 
         .close {
@@ -140,8 +152,8 @@ footer a:hover {
 .press {
 background-color: lightblue; 
 color: black; 
-width: 98%;
     border: 1px solid yellow;
     border-radius: 8px;
     text-decoration: none;
+    width: 98%;
 }
