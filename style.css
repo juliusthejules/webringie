@@ -1,34 +1,29 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    width: 98%;
-    border: 2px solid black; /* Added solid black border */
-    box-sizing: border-box; /* Ensure padding/border are included in width */
+    padding: 20px;
 }
 
 .container {
-    margin: 0 auto; /* Center the content area horizontally */
+    max-width: 1200px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center the content area */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
-    width: 100%; /* Stretch to full width */
 }
 
 header, footer, main {
-    flex: 1; /* Give each element equal height */
     border-radius: 8px;
-    width: 100%; /* Stretch to full width */
+    width: 100%; /* Use full width */
+    margin-bottom: 20px; /* Space between sections */
 }
 
 header {
-    background: #007bff; /* From the original style */
+    background: #007bff;
     color: #ffffff;
     text-align: center;
-}
-
-h1, h2, section, .code-block, .disclaimer, .press {
-    width: 100%; /* Stretch to full width */
+    padding: 20px 0; /* Add padding for better spacing */
 }
 
 h1 {
@@ -38,15 +33,17 @@ h1 {
 
 h2 {
     color: #007bff;
+    margin: 10px 0;
 }
 
 main {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Add padding for inner spacing */
 }
 
 section {
-    margin-bottom: 5px; /* Up & Down */
+    margin-bottom: 20px; /* Increase space between sections */
 }
 
 /* Code box styles */
@@ -56,6 +53,7 @@ section {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
+    padding: 10px; /* Add padding for better readability */
 }
 
 /* Button styles */
@@ -78,7 +76,7 @@ footer {
     text-align: center;
     background: #007bff;
     color: white;
-    margin-top: 20px; /* From the Pyodizer style */
+    padding: 20px 0; /* Add padding for consistency */
 }
 
 footer a {
@@ -87,18 +85,19 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: none;
+    text-decoration: underline; /* Underline on hover for better visibility */
 }
 
 /* Disclaimer Styles */
 .disclaimer {
-    background-color: #e9ecef; /* Slightly darker than the main background for contrast */
-    border: 1px solid #007bff; /* Match the footer's color for a cohesive look */
+    background-color: #e9ecef;
+    border: 1px solid #007bff;
     font-size: 0.9em;
-    color: #555; /* Gray text for a softer tone */
+    color: #555;
     text-align: center;
     margin-top: 20px;
-    border-radius: 8px; /* Rounded corners to match header/footer */
+    border-radius: 8px;
+    padding: 15px; /* Add padding for better spacing */
 }
 
 .disclaimer p {
@@ -106,25 +105,27 @@ footer a:hover {
     line-height: 1.5;
 }
 
-/* Modal styles */
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 98%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 10% auto;
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .close {
@@ -135,15 +136,23 @@ footer a:hover {
 }
 
 .close:hover, .close:focus {
-    color: #000;
+    color: #007bff;
     text-decoration: none;
     cursor: pointer;
 }
 
+/* Press Style */
 .press {
-    background-color: lightblue; 
-    color: black; 
+    background-color: #add8e6; /* Light blue */
+    color: black;
     border: 1px solid yellow;
     border-radius: 8px;
     text-decoration: none;
-    }
+    padding: 10px; /* Add padding for better spacing */
+    display: inline-block; /* Allow for margin and padding */
+    transition: background-color 0.3s ease;
+}
+
+.press:hover {
+    background-color: #87ceeb; /* Darker shade on hover */
+        }
