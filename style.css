@@ -4,48 +4,49 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     width: 98%;
+    border: 2px solid black; /* Added solid black border */
+    box-sizing: border-box; /* Ensure padding/border are included in width */
 }
 
 .container {
     margin: 0 auto; /* Center the content area horizontally */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
-    width: 98%;
+    width: 100%; /* Stretch to full width */
 }
 
 header, footer, main {
     flex: 1; /* Give each element equal height */
     border-radius: 8px;
-    width: 98%;
+    width: 100%; /* Stretch to full width */
 }
 
 header {
     background: #007bff; /* From the original style */
     color: #ffffff;
     text-align: center;
-    width: 98%;
+}
+
+h1, h2, section, .code-block, .disclaimer, .press {
+    width: 100%; /* Stretch to full width */
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
-    width: 98%;
 }
 
 h2 {
     color: #007bff;
-    width: 98%;
 }
 
 main {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 98%;
 }
 
 section {
     margin-bottom: 5px; /* Up & Down */
-    width: 98%;
 }
 
 /* Code box styles */
@@ -55,7 +56,6 @@ section {
     font-family: monospace;
     white-space: pre-wrap;
     word-wrap: break-word;
-    width: 98%;
 }
 
 /* Button styles */
@@ -79,7 +79,6 @@ footer {
     background: #007bff;
     color: white;
     margin-top: 20px; /* From the Pyodizer style */
-    width: 98%;
 }
 
 footer a {
@@ -90,6 +89,7 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
+
 /* Disclaimer Styles */
 .disclaimer {
     background-color: #e9ecef; /* Slightly darker than the main background for contrast */
@@ -99,53 +99,51 @@ footer a:hover {
     text-align: center;
     margin-top: 20px;
     border-radius: 8px; /* Rounded corners to match header/footer */
-    width: 98%;
 }
 
 .disclaimer p {
     margin: 0;
     line-height: 1.5;
-    width: 98%;
 }
 
+/* Modal styles */
 .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 98%;
-            height: 98%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 98%;
+    height: 98%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-        .modal-content {
-            background-color: #fff;
-            margin: 15% auto;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px
-        }
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
 
-        .close {
-            color: #000;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        .close:hover, .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .press {
-background-color: lightblue; 
-color: black; 
+    background-color: lightblue; 
+    color: black; 
     border: 1px solid yellow;
     border-radius: 8px;
     text-decoration: none;
-    width: 98%;
-}
+    }
