@@ -138,11 +138,9 @@ footer a:hover {
         }
 
 .press {
-background-color: blue; 
-color: lightyellow; 
+background-color: lightblue; 
+color: yellow; 
 width: 98%;
     border: 1px solid yellow;
     border-radius: 8px;
-    color: #ffcc00;
-    text-decoration: underline;
 }
