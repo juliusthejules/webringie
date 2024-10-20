@@ -89,7 +89,7 @@ footer a:hover {
 /* Disclaimer Styles */
 .disclaimer {
     background-color: #e9ecef; /* Slightly darker than the main background for contrast */
-    border-top: 1px solid #007bff; /* Match the footer's color for a cohesive look */
+    border: 1px solid #007bff; /* Match the footer's color for a cohesive look */
     padding: 15px;
     font-size: 0.9em;
     color: #555; /* Gray text for a softer tone */
@@ -136,3 +136,13 @@ footer a:hover {
             text-decoration: none;
             cursor: pointer;
         }
+
+.press {
+background-color: blue; 
+color: lightyellow; 
+width: 98%;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    color: #ffcc00;
+    text-decoration: underline;
+}
