@@ -38,20 +38,6 @@ fetch('./API/metadata.json')
             document.head.appendChild(metaDistribution);
         }
 
-        if (data["cache-control"]) {
-            let metaCacheControl = document.createElement('meta');
-            metaCacheControl.httpEquiv = 'cache-control';
-            metaCacheControl.content = data["cache-control"];
-            document.head.appendChild(metaCacheControl);
-        }
-
-        if (data.pragma) {
-            let metaPragma = document.createElement('meta');
-            metaPragma.httpEquiv = 'pragma';
-            metaPragma.content = data.pragma;
-            document.head.appendChild(metaPragma);
-        }
-
         if (data.charset) {
             let metaCharset = document.createElement('meta');
             metaCharset.setAttribute('charset', data.charset);
