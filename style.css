@@ -120,9 +120,9 @@ footer a:hover {
 
 .modal-content {
     background-color: #fff;
-    margin: 0 auto;
+    margin: 10% auto;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     overflow: auto;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
