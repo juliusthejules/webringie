@@ -152,6 +152,9 @@ press {
     padding: 10px; /* Add padding for better spacing */
     display: inline-block; /* Allow for margin and padding */
     transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Increase space between sections */
+    width: 97%;
+    text-align: center;
 }
 
 press:hover {
