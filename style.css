@@ -80,10 +80,9 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 0;
+    padding: 10px 0 auto;
     cursor: pointer;
-    transition: background-color 0.3s ease;   
-    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
