@@ -46,7 +46,6 @@ main {
 
 section {
     margin-bottom: 20px; /* Increase space between sections */
-    text-align: left;
 }
 
 /* Code box styles */
@@ -60,7 +59,7 @@ section {
 }
 
 /* Disclaimer styles */
-disclaimer {
+.disclaimer {
     display: block; /* Make sure the disclaimer behaves like a block element */
     background-color: #e9ecef;
     border: 1px solid #007bff;
