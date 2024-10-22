@@ -80,7 +80,7 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;   
     width: 50%;
@@ -118,15 +118,12 @@ footer a:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 10% auto; /* Center horizontally */
-    padding: 20px; /* Adjust padding as needed */
-    width: 80%; /* Adjust width as needed */
 }
 
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
-    padding: 15px; /* Adjust padding as needed */
+    padding: 5px; /* Adjust padding as needed */
     border: 1px solid #888;
     width: 90%;
     overflow: auto;
