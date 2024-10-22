@@ -75,7 +75,6 @@ section {
 
 /* Button styles */
 button {
-    margin: 0 auto; /* Center the button horizontally */
     background-color: #007bff;
     color: white;
     border: none;
