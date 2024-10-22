@@ -79,7 +79,7 @@ button {
     border: none;
     border-radius: 5px;
     padding: 20px 0;
-    width: 50;
+    width: 50%;
 }
 
 button:hover {
