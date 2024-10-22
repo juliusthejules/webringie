@@ -59,7 +59,7 @@ section {
     padding: 10px; /* Add padding for better readability */
 }
 
-agreements {
+agreements, button {
   background-color: #007bff;
     color: white;
     border: none;
@@ -121,7 +121,7 @@ disclaimer {
     padding: 15px; /* Add padding for better spacing */
 }
 
-disclaimer p {
+disclaimer, p {
     margin: 0;
     line-height: 1.5;
 }
