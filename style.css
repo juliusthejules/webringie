@@ -74,27 +74,9 @@ disclaimer {
     width: 100%; /* Ensure it takes the full width available */
 }
 
-/* Agreements styles */
-agreements {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    justify-content: center;    /* Center the buttons horizontally */
-    gap: 10px;  
-    margin-bottom: 20px; /* Increase space between sections */
-}
-
-agreements:hover {
-    background-color: #0056b3;
-}
-
 /* Button styles */
 button {
+    margin: auto 0;
     background-color: #007bff;
     color: white;
     border: none;
@@ -103,7 +85,6 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     justify-content: center;    /* Center the buttons horizontally */
-    gap: 10px;                  /* Space between buttons */
 }
 
 button:hover {
