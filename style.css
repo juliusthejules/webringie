@@ -59,29 +59,6 @@ section {
     padding: 10px; /* Add padding for better readability */
 }
 
-/* Agreements styles */
-agreements-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-agreements {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    margin: 10px 5px; /* Space between multiple buttons */
-    display: inline-block; /* Inline buttons that stay side-by-side */
-}
-
-agreements:hover {
-    background-color: #0056b3;
-}
-
 /* Disclaimer styles */
 disclaimer {
     display: block; /* Make sure the disclaimer behaves like a block element */
@@ -106,8 +83,9 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-align: center;
-    margin: 0 auto;
+    display: flex;              /* Use flexbox */
+    justify-content: center;    /* Center the buttons horizontally */
+    gap: 10px;                  /* Space between buttons */
 }
 
 button:hover {
