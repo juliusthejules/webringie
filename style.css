@@ -83,7 +83,6 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: flex;              /* Use flexbox */
     justify-content: center;    /* Center the buttons horizontally */
     gap: 10px;                  /* Space between buttons */
 }
