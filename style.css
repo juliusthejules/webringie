@@ -59,10 +59,21 @@ section {
     padding: 10px; /* Add padding for better readability */
 }
 
-section button {
-  margin: 0 auto;
-  width: fit-content; /* Or set a specific width like width: 200px; */
+agreements {
+  background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 0 auto;
 }
+
+  agreements:hover {
+    background-color: #0056b3;
+  }
 
 /* Button styles */
 button {
@@ -99,7 +110,7 @@ footer a:hover {
 }
 
 /* Disclaimer Styles */
-.disclaimer {
+disclaimer {
     background-color: #e9ecef;
     border: 1px solid #007bff;
     font-size: 0.9em;
@@ -110,7 +121,7 @@ footer a:hover {
     padding: 15px; /* Add padding for better spacing */
 }
 
-.disclaimer p {
+disclaimer p {
     margin: 0;
     line-height: 1.5;
 }
