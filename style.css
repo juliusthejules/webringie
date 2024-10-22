@@ -59,6 +59,11 @@ section {
     padding: 10px; /* Add padding for better readability */
 }
 
+section button {
+  margin: 0 auto;
+  width: fit-content; /* Or set a specific width like width: 200px; */
+}
+
 /* Button styles */
 button {
     background-color: #007bff;
