@@ -141,21 +141,12 @@ footer a:hover {
     cursor: pointer;
 }
 
-/* Press Style */
-press {
-    background-color: #add8e6; /* Light blue */
-    color: black;
-    border: 1px solid yellow;
-    border-radius: 8px;
-    text-decoration: none;
-    padding: 10px; /* Add padding for better spacing */
-    display: inline-block; /* Allow for margin and padding */
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Increase space between sections */
-    width: 97%;
-    text-align: center;
+.documentation {
+margin-top: 5px;
+background-color: lightyellow;
+padding: 15px;
+color: #000;
+border: 1px solid #000; 
+border-radius: 5px;
+text-align: center;
 }
-
-press:hover {
-    background-color: #87ceeb; /* Darker shade on hover */
-        }
